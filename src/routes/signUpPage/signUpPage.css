@@ -1,0 +1,24 @@
+.sign-up-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.orbital {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.05;
+  animation: 100s linear infinite rotateOrbital;
+  z-index: -1;
+}
+@keyframes rotateOrbital {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
+}
